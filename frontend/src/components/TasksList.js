@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import 'datatables.net-dt'
+import 'datatables.net-bs5'
 import $ from 'jquery'
-import './TasksList.css'
 
 export default function TasksList () {
     useEffect(() => {
@@ -10,25 +9,25 @@ export default function TasksList () {
         })
     }, [])
     return (
-        <table className='dataTable-container todo-table'>
+        <table className='table table-sm table-striped table-hover table-bordered text-center todo-table'>
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Description</th>
-                    <th>Created</th>
-                    <th>Started</th>
-                    <th>Status</th>
-                    <th>Finalized</th>
+                    <th className=''>ID</th>
+                    <th className=''>Description</th>
+                    <th className=''>Created</th>
+                    <th className=''>Started</th>
+                    <th className=''>Status</th>
+                    <th className=''>Finalized</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td>To create a app with FastAPI and React JS</td>
-                    <td>2024-05-20</td>
-                    <td>2024-05-20</td>
-                    <td>In Progress</td>
-                    <td>----</td>
+                    <td className=''>1</td>
+                    <td className=''>To create a app with FastAPI and React JS</td>
+                    <td className=''>2024-05-20</td>
+                    <td className=''>2024-05-20</td>
+                    <td className=''>In Progress</td>
+                    <td className=''>----</td>
                 </tr>
             </tbody>
         </table>
